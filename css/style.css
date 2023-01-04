@@ -745,11 +745,5 @@ section.social ul{
     100% {filter: drop-shadow(1px 1px 50px var(--azul-claro));}
 }
 .center {
-    /* position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin: auto; */
-
+    position: fixed;
 }
