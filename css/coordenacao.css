@@ -108,6 +108,9 @@ main{
 .bonus p{
     margin: 15px 0;
 }
+.bonus-span{
+    text-decoration: underline;
+}
 .praquem{
     background-color: ;
 }
@@ -118,16 +121,17 @@ main{
     font-size: 1.2em;
     font-weight: 900;
     padding: 5px;
-    color: #fff;
+    color: #000;
+    text-decoration: underline;
 }
 .ini{
-    background-color: #F2B035;
+    /* background-color: #F2B035; */
 }
 .int{
-    background-color: #F2600C;
+    /* background-color: #F2600C; */
 }
 .ava{
-    background-color: #D90707;
+    /* background-color: #D90707; */
 }
 .garantia{
     background-color: ;
