@@ -41,13 +41,14 @@ ul{
     padding: 15px;
     border-radius: 5px;
     list-style: none;
-    box-shadow: rgb(99 99 99) 1px 1px 15px;
+    box-shadow: rgb(99 99 99) 1px 1px 5px;
     transition: 0.5s;
     font-family: 'Oswald', sans-serif;
     font-size: 1.5em;
 }
 .btn:hover{
     background-color: #000;
+    box-shadow: none;
 }
 /*GLOBAL*/
 main{
@@ -85,7 +86,7 @@ main{
 .btn-cabecalho:hover{
     background-color: #F2600C;
 }
-.conteudo, .bonus, .praquem, .garantia, .prof{
+.conteudo, .bonus, .praquem, .garantia, .prof, .whats{
     padding: 60px;
     border-bottom: 1px solid #000;
 }
@@ -111,9 +112,6 @@ main{
 .bonus-span{
     text-decoration: underline;
 }
-.praquem{
-    background-color: ;
-}
 .praquem p{
     margin: 15px 0;
 }
@@ -133,9 +131,9 @@ main{
 .ava{
     /* background-color: #D90707; */
 }
-.garantia{
+/* .garantia{
     background-color: ;
-}
+} */
 .garantia{
     display: flex;
     align-items: center;
@@ -181,7 +179,33 @@ article.garantia-txt p{
 .prof-txt h3{
     color: yellow;
 }
-/*============================Mobile====================*/
+.whats{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+.whats-txt{
+    display: flex;
+    flex-direction: column;
+}
+.whats-btn{
+    color: #000;
+    background-color: #00de5c;
+    padding: 15px;
+    border-radius: 5px;
+    list-style: none;
+    box-shadow: rgb(99 99 99) 1px 1px 5px;
+    transition: 0.5s;
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.5em;
+}
+.whats-btn:hover{
+    color: #fff;
+    box-shadow: none;
+}
+/*===================Mobile====================*/
 @media only screen and (max-width: 768px){
     .cabecalho{
         align-items: center;
@@ -192,7 +216,7 @@ article.garantia-txt p{
         width: 98%;
         margin-right: 0;
     }
-    .conteudo, .bonus, .praquem, .garantia, .prof{
+    .conteudo, .bonus, .praquem, .garantia, .prof .whats{
         padding: 40px 20px;
     }
     article.garantia-txt{
