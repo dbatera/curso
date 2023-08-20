@@ -86,15 +86,26 @@ main{
 .btn-cabecalho:hover{
     background-color: #F2600C;
 }
-.conteudo, .bonus, .praquem, .garantia, .prof, .whats{
+/* ------cabecalho------ */
+.sobre{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+iframe{
+    width: 853px;  
+    height: 488px;  
+    border-radius: 20px;
+}
+.conteudo, .bonus, .praquem, .garantia, .prof, .whats, .sobre{
     padding: 60px;
     border-bottom: 1px solid #000;
 }
 .conteudo li{
     margin-bottom: 30px;
-}
-.conteudo{
-    
 }
 .conteudo h2{
     margin: 20px 0;
@@ -164,6 +175,7 @@ article.garantia-txt p{
 }
 .prof video{
     height: 90vh;
+    border-radius: 5px;
 }
 .prof-txt{
     width: 50%;
@@ -206,7 +218,7 @@ article.garantia-txt p{
     box-shadow: none;
 }
 /*===================Mobile====================*/
-@media only screen and (max-width: 768px){
+@media only screen and (max-width: 851px){
     .cabecalho{
         align-items: center;
         background-size: cover;
@@ -216,8 +228,20 @@ article.garantia-txt p{
         width: 98%;
         margin-right: 0;
     }
-    .conteudo, .bonus, .praquem, .garantia, .prof .whats{
+    .sobre{
+        flex-direction: column;
+        background-color: #000;
+    }
+    iframe{
+        width: 100%;  
+        height: 100vh;  
+        border-radius: 20px;
+    }
+    .conteudo, .bonus, .praquem, .garantia, .prof .whats, .sobre{
         padding: 40px 20px;
+    }
+    .whats{
+        justify-content: start;
     }
     article.garantia-txt{
         width: 100%;
