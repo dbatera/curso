@@ -20,7 +20,6 @@ h1, h2, h3{
 }
 h1{
     font-size: 2.5em;
-    text-align: center;
 }
 h2{
     font-size: 2em;
@@ -51,14 +50,12 @@ ul{
     box-shadow: none;
 }
 /*GLOBAL*/
-main{
-    padding-bottom: 10px;
-}
 .cabecalho{
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: end;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
     color: aliceblue;
     text-shadow: 1px 1px 5px #000;
     background: url('https://www.ikmultimedia.com/products/st3hughpadghamdrums/main-banner/regular@2x.jpg');
@@ -68,19 +65,47 @@ main{
     background-attachment: fixed;
     height: 60vh;
 }
-.cabecalho h1{
-    margin-right: 30px;
+.valores p{
+    font-family: 'Oswald', sans-serif !important; 
+    font-weight: 800;
 }
-/* .chave{
-    color: #F2600C;
-    text-shadow: 1px 1px 1px #D90707;
-} */
+.valor-sublinhado{
+    text-decoration: line-through;
+    font-size: 1.5em;
+}
+.valor-real{
+    font-size: 2.5em;
+}
+.limitado{
+    background-color: #D90707;
+    padding: 10px;
+    text-shadow: none;
+    border-radius: 5px;
+    font-size: 1.5em;
+    margin-bottom: 15px;
+}
+.vitalicio{
+    background-color: #fff;
+    display: inline;
+    padding: 10px;
+    border-radius: 5px;
+    color: #D90707;
+    text-shadow: none;
+    text-transform: uppercase;
+    font-size: 1.5em;
+}
+/* valores - cabecalho */
+.cab-titulo{
+    text-align: right;
+}
+.frase-titulo{
+    margin-bottom: 30px;
+}
 .suss{
     color: #D90707;
 } 
 .btn-cabecalho{
     margin-top: 30px;
-    margin-right: 30px;
     box-shadow: none;
 }
 .btn-cabecalho:hover{
@@ -99,10 +124,22 @@ iframe{
     width: 853px;  
     height: 488px;  
     border-radius: 20px;
+    box-shadow: 1px 1px 28px #000000c4;
 }
 .conteudo, .bonus, .praquem, .garantia, .prof, .whats, .sobre{
     padding: 60px;
     border-bottom: 1px solid #000;
+}
+.conteudo{
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+.conteudo img{
+    width: 500px;
+    height: 398px;
 }
 .conteudo li{
     margin-bottom: 30px;
@@ -133,18 +170,6 @@ iframe{
     color: #000;
     text-decoration: underline;
 }
-.ini{
-    /* background-color: #F2B035; */
-}
-.int{
-    /* background-color: #F2600C; */
-}
-.ava{
-    /* background-color: #D90707; */
-}
-/* .garantia{
-    background-color: ;
-} */
 .garantia{
     display: flex;
     align-items: center;
@@ -217,16 +242,45 @@ article.garantia-txt p{
     color: #fff;
     box-shadow: none;
 }
+footer{
+    color: #000;
+    text-align: center;
+    padding: 5px 0;
+    font-family: sans-serif;
+    font-size: 0.8em;
+}
 /*===================Mobile====================*/
-@media only screen and (max-width: 851px){
+@media only screen and (max-width: 920px){
     .cabecalho{
+        height: auto;
         align-items: center;
+        justify-content: center;
         background-size: cover;
         background-attachment: fixed;
+        flex-direction: row-reverse;
+        gap: 50px;
+        padding: 30px;
+        text-align: center;
+    }
+    .cab-titulo{
+        text-align: center;
+    }
+    .valores{
+        order: 1;
+        background-color: #222;
+        padding: 30px;
+        border-radius: 10px;
     }
     .cabecalho h1{
         width: 98%;
-        margin-right: 0;
+    }
+    .conteudo{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .conteudo img{
+        width: 100%;
+        height: auto;
     }
     .sobre{
         flex-direction: column;
@@ -237,7 +291,7 @@ article.garantia-txt p{
         height: 100vh;  
         border-radius: 20px;
     }
-    .conteudo, .bonus, .praquem, .garantia, .prof .whats, .sobre{
+    .conteudo, .bonus, .praquem, .garantia, .prof, .whats, .sobre{
         padding: 40px 20px;
     }
     .whats{
