@@ -67,7 +67,8 @@ video{
 }
 /* global */
 header{
-    background: url('/imagem_coordenacao/header-bg.jpg');
+    /* background: url('/imagem_coordenacao/header-bg.jpg'); */
+    background: url('https://www.ikmultimedia.com/products/st3hughpadghamdrums/main-banner/regular@2x.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: bottom;
