@@ -28,6 +28,7 @@
           // Se a senha estiver correta, mostre o botão de acesso
           document.getElementById("formulario").style.display = "none"; // Esconde o formulário
           document.getElementById("resultado").innerHTML = "Senha correta.";
+          document.getElementById("resultado").style.display = "flex";
           var botao = document.createElement("button");
           botao.innerHTML = "<a href='https://www.mediafire.com/folder/z21voz7nif5ki/Tecnica'>Acesso Permitido</a>";
           document.getElementById("resultado").appendChild(botao); // Adiciona o botão à div "resultado"

@@ -63,7 +63,7 @@ button{
     border-radius: 5px;
 }
 #resultado{
-    display: flex;
+    display: none;
     flex-direction: column;
     gap: 20px;
     background-color: white;
