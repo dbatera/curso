@@ -11,7 +11,7 @@
     
     <div id="formulario">
       <label for="senha">Digite a senha:</label>
-      <input type="password" id="senha">
+      <input type="password" id="senha" onkeyup="verificarEnter(event)">
       <button onclick="verificarSenha()">Verificar Senha</button>
     </div>
 
@@ -22,6 +22,7 @@
       function verificarSenha() {
         // Obtenha a senha digitada pelo usuário
         var senhaDigitada = document.getElementById("senha").value;
+        var botao = document.createElement("button");
 
         // Verifique se a senha está correta (substitua 'minhaSenha' pela sua senha real)
         if (senhaDigitada === "002") {
@@ -29,14 +30,19 @@
           document.getElementById("formulario").style.display = "none"; // Esconde o formulário
           document.getElementById("resultado").innerHTML = "Senha correta.";
           document.getElementById("resultado").style.display = "flex";
-          var botao = document.createElement("button");
           botao.innerHTML = "<a href='https://www.mediafire.com/folder/z21voz7nif5ki/Tecnica'>Acesso Permitido</a>";
           document.getElementById("resultado").appendChild(botao); // Adiciona o botão à div "resultado"
         } else {
           document.getElementById("resultado").innerHTML = "Senha incorreta. Tente novamente.";
         }
       }
+
+      // Função para verificar se a tecla "Enter" foi pressionada
+      function verificarEnter(event) {
+        if (event.key === "Enter") {
+          verificarSenha();
+        }
+      }
     </script>
   </body>
 </html>
-
