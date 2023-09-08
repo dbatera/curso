@@ -1,34 +1,33 @@
-@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Comic+Neue:ital,wght@0,400;0,700;1,300;1,400&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Bowlby+One+SC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gothic+A1:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=News+Cycle:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cabin:wght@400;500;600;700&display=swap');
 *{
-    border: none;
-    box-sizing: border-box;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
     text-decoration: none;
 }
-/* reseat */
 html, body{
     width: 100%;
     height: 100%;
 }
+/* reseat */
+:root{
+    --cor-1: #fd1105;
+    --cor-2: black;
+    --radius: 3px;
+    --section-padding: 70px 10px;
+    --button-padding: 5px 40px;
+}
 body{
-    font-family: sans-serif;
-    background-color: #F2F2F2;
-    background: url(/imagem_velocidade/velocidade_bg.png);
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: center;
-
+    background-color: var(--cor-2);
+    color: aliceblue;
 }
-header, .cont-txt, .comprar, .duvida{
-    border: 5px solid black;
-    border-radius: 10px;
-    background-color: white;
-    padding: 20px;
+h1, a{
+    font-family: 'News Cycle', sans-serif;
 }
-h1, h2, h3, h4{
-    font-family: 'Bowlby One SC', cursive;
+h2, h3, h4{
+    font-family: 'Gothic A1', sans-serif;
 }
 h1{
     font-size: 3em;
@@ -37,72 +36,77 @@ h2{
     font-size: 2em;
 }
 h3{
-    font-size: 2.5;
+    font-size: 2em;
 }
 h4{
-    font-size: 2.2;
+    font-size: 1.5em;
 }
 p{
+    font-family: 'Cabin', sans-serif;  
     font-size: 1.3em;
-    font-family: 'Comic Neue', cursive;
-    font-weight: 700;
+}
+a{
+    font-size: 1.5em;
+    background-color: var(--cor-1);
+    padding: var(--button-padding);
+    border-radius: var(--radius);
+    width: max-content;
+    color: aliceblue;
+}
+.btn{
+    transition: .2s;
+}
+.btn:hover{
+    transform: scale(1.1);
 }
 /* global */
-main{
-    padding: 10px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: start;
-    gap: 20px;
-    color: #262626;
-}
-main h1{
-    color: red;
-}
-
-.cont-txt p{
-    margin: 10px 0;
-    text-indent: 10px;
-}
-.prof{
-    font-weight: 400;
-    font-style: italic;
-}
-.container-comprar-duvida{
+header{
+    background: url('/imagens_novas/header_bg_parede_cinza.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 10px;
+}
+.cabecalho-txt{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
     gap: 20px;
+    text-shadow: 1px 1px 1px black;
 }
-.comprar{
-    margin-bottom: 10px;
+.cabecalho-txt h2{
+    margin-bottom: 20px;
 }
-.comprar-h4{
-    color: red;
+.cabecalho-card-valor{
+    background-color: var(--cor-1);
+    padding: 30px 0px;
+    border-radius: 5px;
+    text-shadow: 1px 1px 1px black;
 }
-.garantia{
-    margin-bottom: 50px;
+.cabecalho-card-valor h4{
+    margin-left: 10px;
+}
+.valor-antigo{
+    text-decoration: line-through;
+}
+.valor-promo{
+    font-size: 2.5em !important;
+}
+.vitalicio{
+    background-color: var(--cor-2);
+    padding: var(--button-padding);
+}
+/* header */
+.duvida{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: var(--section-padding);
+    gap: 30px;
+}
 
-}
-.comprar a{
-    background-color: black;
-    padding: 20px;
-    color: #F2F2F2;
-    margin-bottom: 100px;
-    border-radius: 10px 10px 0 0;
-}
-.chama{
-    margin-bottom: 50px;
-}
-.duvida a{
-    background-color: #262626;
-    color: white;
-    padding: 20px;
-    border-radius: 10px 10px 0 0;
-}
-/* ======= mobile */
-@media (max-width: 850px) {
-    main{
-        padding: 10px;
-    }
-}
