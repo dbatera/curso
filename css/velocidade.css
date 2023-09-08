@@ -109,4 +109,16 @@ header{
     padding: var(--section-padding);
     gap: 30px;
 }
-
+@media (max-width: 1000px) {
+    header{
+        gap: 50px;
+    }
+    .cabecalho-txt{
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+    .valor-promo{
+        font-size: 5em;
+    }
+  }
