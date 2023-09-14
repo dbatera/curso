@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+/* reseat */
+:root{
+    --numero-titulo: 'Saira Condensed', sans-serif;
+    --descri-titulo: 'Barlow Condensed', sans-serif;
+    --paragrafo: 'Cabin', sans-serif;
+    --laranja: #f0a500;
+    --laranja-esc:#e45826;
+    --preto: #1b1a17;
+    --vermelho: #fd1105;
+    --verde: #21c400;
+    --radius: 5px;
+}
+header, section{
+    padding: 50px 10px;
+}
+.txt{
+    width: 90%;
+}
+.btn{
+    background-color: var(--verde);
+    color: white;
+    padding: 20px;
+    border-radius: var(--radius);
+    font-family: var(--descri-titulo);
+    font-size: 1.5em;
+    width: max-content;
+}
+/* global */
+header{
+    background: url('/imagens_novas/comb_header_bg.jpeg');
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    color: aliceblue;
+    height: 100vh;
+}
+header span{
+    color: var(--vermelho);
+}
+header h2{
+    font-size: 2em;
+}
+header h3, small{
+    font-family: var(--descri-titulo);
+    font-size: 1.5em;
+}
+header p{
+    font-size: 1.2em;
+    font-family: var(--paragrafo);
+}
+.cabecalho-titulo{
+    display: flex;
+    flex-direction: column;
+}
+.cabecalho-titulo h1{
+    font-family: var(--numero-titulo);
+    font-size: 6em;
+    line-height: .7em;
+}
+.cabecalho-titulo h2{
+    font-family: var(--descri-titulo);
+    font-size: 2em;
+    color: var(--laranja);
+}
+.headline{
+    display: flex;
+    flex-direction: column;
+    font-family: var(--descri-titulo);
+    text-shadow: 1px 1px 1px black;
+    gap: 10px;
+}
+.valores{
+    display: flex;
+    flex-direction: column;
+}
+.parcela{
+    font-size: 3em;
+}
+small{
+    font-size: 1.2em;
+}
+.valores img{
+    width: 200px;
+}
+/* header */
+section h2{
+    font-size: 2em;
+}
+section h2, h3{
+    font-family: var(--descri-titulo);
+}
+section p{
+    font-family: var(--paragrafo);
+}
+.pra-quem-card{
+
+}
