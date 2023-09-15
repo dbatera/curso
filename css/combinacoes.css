@@ -105,6 +105,17 @@ small{
     margin-top: 5px;
 }
 /* header */
+section.grupo-whats{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.whats-txt{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
 section h2{
     font-size: 2em;
 }
@@ -113,4 +124,8 @@ section h2, h3{
 }
 section p{
     font-family: var(--paragrafo);
+    margin-bottom: 10px;
+}
+.whats-btn{
+    background-color: var(--laranja-esc);
 }
