@@ -16,18 +16,21 @@ html,body{
     --numero-titulo: 'Saira Condensed', sans-serif;
     --descri-titulo: 'Barlow Condensed', sans-serif;
     --paragrafo: 'Cabin', sans-serif;
+    --amarelo: #FFBE0B;
     --laranja: #f0a500;
     --laranja-esc:#e45826;
     --preto: #1b1a17;
+    --rosa: #FF006E;
+    --roxo: #8338EC;
+    --azul: #3A86FF;
     --vermelho: #fd1105;
     --verde: #21c400;
+    --dark1: #110E1B;
+    --dark2: #191528;
     --radius: 5px;
 }
 header, section{
     padding: 50px 10px;
-}
-.txt{
-    width: 90%;
 }
 .btn{
     background-color: var(--verde);
@@ -38,6 +41,18 @@ header, section{
     font-size: 1.5em;
     width: max-content;
 }
+h2, h3{
+    font-family: var(--numero-titulo);
+}
+h2{
+    font-size: 2em;
+}
+h3{
+    font-size: 1.5em;
+}
+p{
+    font-family: var(--paragrafo);
+}
 /* global */
 header{
     background: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg24JY4KyJr7S2gVBSOs4X1aUNMZf4WnvFkEwDMat5HKE6uZathEPRbrzDWhwKqXZNx6tF5WB8QF7wXvq0uMIxZsYvdLjBLFLVyv9NFEI4W069iAWaxULmTEbocwBUpFPXc9oMUtnKjNfEOpcYgecmLolrPJbJ1IryIVfyt9Nchh7_wxFuFIRrBnvZPNpVk/s1366/comb_header_bg.jpeg');
@@ -45,12 +60,15 @@ header{
     background-size: cover;
     background-attachment: fixed;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-wrap: wrap;
+    /* flex-direction: column; */
+    align-items: flex-start;
     justify-content: center;
     gap: 20px;
     color: aliceblue;
-    /* height: 100vh; */
+}
+header .txt{
+    max-width: 450px;
 }
 header span{
     color: var(--vermelho);
@@ -69,10 +87,12 @@ header p{
 .cabecalho-titulo{
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 .cabecalho-titulo h1{
     font-family: var(--numero-titulo);
-    font-size: 6em;
+    font-size: 8em;
     line-height: .7em;
 }
 .cabecalho-titulo h2{
@@ -86,10 +106,6 @@ header p{
     font-family: var(--descri-titulo);
     text-shadow: 1px 1px 1px black;
     gap: 10px;
-}
-.vitalicio{
-    background-color: black;
-    padding: 5px;
 }
 .valores{
     display: flex;
@@ -110,27 +126,72 @@ small{
     margin-top: 5px;
 }
 /* header */
-section.grupo-whats{
+.conteudo-do-curso{
+    color: aliceblue;
+    background-color: var(--dark1);
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    flex-wrap: wrap;
     align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 30px;
 }
-.whats-txt{
+.conteudo-do-curso h2{
+    width: 100%;
+    text-align: center;
+    
+}
+.conteudo-card{
+    max-width: 450px;
+}
+/* Conteudo do curso */
+.numeros{
+    color: aliceblue;
+    background-color: var(--dark2);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: center;
+    gap: 30px;
+}
+.alunos-200{
+    color: var(--amarelo);
+}
+.seguidores{
+    color: var(--rosa);
+}
+.xp{
+    color: var(--azul);
+}
+.numeros-card{
+    max-width: 150px;
+    text-align: center;
+}
+/* numero */
+.pra-vc{
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    text-align: center;
+    align-items: center;
+    color: aliceblue;
+    background-color: var(--preto);
+    gap: 40px;
 }
-section h2{
-    font-size: 2em;
+.pra-vc-vermelho{
+    color: var(--vermelho);
 }
-section h2, h3{
-    font-family: var(--descri-titulo);
+.pra-vc-card-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: baseline;
+    gap: 30px;
 }
-section p{
-    font-family: var(--paragrafo);
-    margin-bottom: 10px;
+.pra-vc-card{
+    max-width: 350px;
 }
-.whats-btn{
-    background-color: var(--laranja-esc);
+.fa-circle-check{
+    color: #21c400;
+    font-size: 10em;
 }
+/* pra vc */
