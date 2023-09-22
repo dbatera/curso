@@ -147,7 +147,7 @@ small{
 /* Conteudo do curso */
 .numeros{
     color: aliceblue;
-    background-color: var(--dark2);
+    background-color: var(--preto);
     display: flex;
     flex-wrap: wrap;
     align-items: baseline;
@@ -174,7 +174,7 @@ small{
     text-align: center;
     align-items: center;
     color: aliceblue;
-    background-color: var(--preto);
+    background-color: var(--dark2);
     gap: 40px;
 }
 .pra-vc-vermelho{
@@ -195,3 +195,45 @@ small{
     font-size: 10em;
 }
 /* pra vc */
+.depoimentos{
+    background-color: black;
+    color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.depo-card-container{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 30px;
+    width: 100%;
+}
+.depo-card{
+    max-width: 450px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.depo-card img{
+    width: 100%;
+    border-radius: var(--radius);
+}
+.depo-card video{
+    width: 100%;
+    border-radius: var(--radius);
+}
+.grupo-whats{
+    text-align: center;
+    margin: 100px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.whats-btn{
+    background-color: #128C7E;
+}
+/* depoimento */
