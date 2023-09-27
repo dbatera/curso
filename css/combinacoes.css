@@ -91,15 +91,16 @@ header p{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 100%;
 }
 .cabecalho-titulo h1{
     font-family: var(--numero-titulo);
-    font-size: 8em;
+    font-size: 15em;
     line-height: .7em;
 }
 .cabecalho-titulo h2{
     font-family: var(--descri-titulo);
-    font-size: 2em;
+    font-size: 4em;
     color: var(--laranja);
 }
 .headline{
@@ -108,10 +109,20 @@ header p{
     font-family: var(--descri-titulo);
     text-shadow: 1px 1px 1px black;
     gap: 10px;
+    border: 2px solid;
+    padding: 50px;
+    border-radius: var(--radius);
+    background-color: rgba(0, 0, 0, 0.671);
+    backdrop-filter: blur(10px);
 }
 .valores{
     display: flex;
     flex-direction: column;
+    border: 2px solid;
+    padding: 50px;
+    border-radius: var(--radius);
+    background-color: rgba(0, 0, 0, 0.671);
+    backdrop-filter: blur(10px);
 }
 .risco{
     color: white;
@@ -128,6 +139,26 @@ small{
     margin-top: 5px;
 }
 /* header */
+.video-sobre{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--dark2);
+    color: white;
+    text-align: center;
+}
+.video-sobre-iframe{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%; 
+}
+.video-sobre-iframe iframe{
+    border-radius: var(--radius);
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.664);
+}
+/* vídeo sobre */
 .conteudo-do-curso{
     color: aliceblue;
     background-color: var(--dark1);
@@ -147,6 +178,23 @@ small{
     max-width: 450px;
 }
 /* Conteudo do curso */
+.plataforma-img{
+    background-color: var(--dark1);
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+.cel{
+    width: 20%;
+    margin-right: -150px;
+    z-index: 1;
+}
+.pc{
+    width: 80%;
+}
+/* Plataforma Imagens */
 .numeros{
     color: aliceblue;
     background-color: var(--preto);
@@ -241,3 +289,14 @@ small{
     background-color: #128C7E;
 }
 /* depoimento */
+
+/* =======MOBILE AJUSTES======== */
+@media (max-width: 500px){
+    .cel{
+        width: 100%;
+        margin-right: 0;
+    }
+    .pc{
+        display: none;
+    }
+}
