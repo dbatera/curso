@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@700&display=swap');
+*{
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+html, body{
+    width: 100%;
+    height: 100%;
+    font-family: sans-serif;
+}
+/* reseat */
+:root{
+    --numero-titulo: 'Saira Condensed', sans-serif;
+    --descri-titulo: 'Barlow Condensed', sans-serif;
+    --paragrafo: 'Cabin', sans-serif;
+    --amarelo: #FFBE0B;
+    --laranja: #f0a500;
+    --laranja-esc:#e45826;
+    --preto: #1b1a17;
+    --rosa: #FF006E;
+    --roxo: #8338EC;
+    --azul: #3A86FF;
+    --vermelho: #fd1105;
+    --verde: #21c400;
+    --dark1: #110E1B;
+    --dark2: #191528;
+    --radius: 5px;
+}
+p{
+    font-family: var(--paragrafo);
+    font-size: 1.2em;
+    color: rgba(240, 255, 255, 0.815);
+
+}
+h1, h2, h3{
+    font-family: var(--descri-titulo);
+    font-size: 2em;
+}
+/* global */
+main{
+    background-color: var(--laranja-esc);
+    /* height: 100vh; */
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    flex-wrap: wrap;
+    color: white;
+    padding: 20px;
+    gap: 20px;
+}
+.combina-card{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--preto);
+    max-width: 300px;
+    /* padding: 20px; */
+    gap: 20px;
+    border-radius: var(--radius);
+    box-shadow: 1px 20px 20px #0000000e;
+}
+.combina img{
+    max-width: 300px;
+    height: max-content;
+    border-radius: var(--radius);
+}
+.combina-txt{
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+    gap: 10px;
+    padding: 20px;
+}
+.btn{
+    text-decoration: none;
+    color: aliceblue;
+    background-color: var(--vermelho);
+    padding: 10px;
+    font-family: var(--descri-titulo);
+    font-size: 2em;
+    width: 100%;
+    text-align: center;
+    border-bottom-left-radius: var(--radius);
+    border-bottom-right-radius: var(--radius);
+}

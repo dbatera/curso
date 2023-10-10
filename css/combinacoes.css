@@ -71,6 +71,7 @@ header{
 }
 header .txt{
     max-width: 450px;
+    min-height: 440px;
 }
 header span{
     color: var(--vermelho);
