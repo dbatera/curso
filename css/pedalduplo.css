@@ -59,14 +59,24 @@ li, a{
   }
   .txt{
     max-width: 800px;
+    background-color: #000000d8;
+    border-radius: var(--radius);
+    backdrop-filter: blur(10px);
+
   }
   main{
+    padding: 20px 0;
+    gap: 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: var(--preto);
     color: #ffffffcb;
+    background-color: var(--preto);
+    /* background: url('https://images.pexels.com/photos/1601464/pexels-photo-1601464.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed; */
   }
   .vermelho{
     color: var(--vermelho);
