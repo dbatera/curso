@@ -290,7 +290,35 @@ small{
     background-color: #128C7E;
 }
 /* depoimento */
-
+.garantia{
+    background-color: var(--dark1);
+    color: bisque;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.garantia img{
+    max-width: 200px;
+}
+.garantia-txt{
+    max-width: 600px;
+}
+.garantia-txt h2{
+    line-height: 1em;
+    margin-bottom: 10px;
+}
+.garantia-txt p{
+    margin-bottom: 50px;   
+}
+/* garantia */
+footer{
+    padding: 50px;
+    background-color: var(--preto);
+    color: rgba(245, 245, 220, 0.589);
+    text-align: center;
+}
 /* =======MOBILE AJUSTES======== */
 @media (max-width: 500px){
     .cel{
