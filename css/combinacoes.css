@@ -39,7 +39,8 @@ header, section{
     border-radius: var(--radius);
     font-family: var(--descri-titulo);
     font-size: 1.5em;
-    width: max-content;
+    /* width: max-content; */
+    text-align: center;
 }
 h2, h3{
     font-family: var(--numero-titulo);
@@ -77,7 +78,7 @@ header{
 }
 header .txt{
     max-width: 450px;
-    min-height: 385px;
+    min-height: 436px;
 }
 header span{
     color: var(--vermelho);
