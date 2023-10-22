@@ -39,6 +39,12 @@ h1, h2, h3{
     font-family: var(--descri-titulo);
     font-size: 2em;
 }
+.amarelo{
+    color: var(--laranja);
+}
+.vermelho{
+    color: var(--vermelho);
+}
 /* global */
 body{
     display: flex;
@@ -100,6 +106,10 @@ main{
     max-width: 300px;
     gap: 10px;
     padding: 20px;
+}
+.fa-check{
+    font-size: .7em;
+    color: var(--verde);
 }
 .btn{
     text-decoration: none;

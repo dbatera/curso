@@ -6,10 +6,32 @@
     <link rel="stylesheet" href="css/combinacoes.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link href='https://media.tenor.com/_GBCxyMAmjMAAAAi/drum-joypixels.gif' rel='icon'/>
-    <script src="https://use.fontawesome.com/5b8b4505c0.js"></script>
+    <script src="https://kit.fontawesome.com/6eba5092e8.js" crossorigin="anonymous"></script>
     <title>200 Combinações</title>
+    <script>
+        document.onreadystatechange = function() {
+            if (document.readyState !== "complete") {
+                document.querySelector(
+                  "main").style.display = "none";
+                document.querySelector(
+                  "#loader").style.display = "flex";
+            } else {
+                document.querySelector(
+                  "#loader").style.display = "none";
+                document.querySelector(
+                  "main").style.display = "block";
+            }
+        };
+    </script>
 </head>
 <body>
+    <div id="loader" class="loader-center">
+        <img src="image/Logo-reformulação.svg" alt="aulas de bateria em londrina - logo"/>
+        <h3>@Aulasdbatera</h3>
+        <p>Espera só um pouquinho...</p>
+    </div>
+    <!-- loader -->
+<main>
     <header class="cabecalho">
         <div class="cabecalho-titulo">
             <img class="img-cover" src="image/combinacoes.png" alt="">
@@ -19,9 +41,9 @@
             <h2>COMBINAÇÕES</h2>
         </div>
         <div class="headline txt">
-            <h2><span class="cab-amarelo">200</span> Viradas</h2>
-            <h2><span class="cab-amarelo">200</span> Ritmos Lineares</h2>
-            <h2><span class="cab-amarelo">200</span> Gospel Chops</h2>
+            <h2><i class="fa-solid fa-check"></i> <span class="cab-amarelo">200</span> Viradas</h2>
+            <h2><i class="fa-solid fa-check"></i> <span class="cab-amarelo">200</span> Ritmos Lineares</h2>
+            <h2><i class="fa-solid fa-check"></i> <span class="cab-amarelo">200</span> Gospel Chops</h2>
             <p>
                 <span>Tudo isso em um único curso</span>. Além de exercicíos para fortalecer pés e mãos, pivot, pedal duplo e muito mais.
             </p>
@@ -31,7 +53,7 @@
             <h3>Promoção por tempo <span>LIMITADO</span> de <span class="risco">R$86,90</span> por apenas:</h3>
             <h3>5x de</h3>
             <h3 class="parcela">R$5,44</h3>
-            <small>ou R$86,90 à vista</small>
+            <small>ou R$24,90 à vista</small>
             <h2><span class="vermelho vitalicio">Acesso Vitalício</span></h2>
             <a class="btn" href="https://pay.kiwify.com.br/Bs16oBy">Compre Agora</a>
             <img src="imagens_novas/formas_de_pagamentos.png" alt="">
@@ -187,5 +209,8 @@
     <footer>
         <small>© Copyright MB - 2023 All rights reserved.</small>
     </footer>
+</main>
+
+
 </body>
 </html>

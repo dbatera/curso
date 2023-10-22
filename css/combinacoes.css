@@ -29,6 +29,18 @@ html,body{
     --dark2: #191528;
     --radius: 5px;
 }
+#loader{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    background-color: var(--laranja-esc);
+    color: #fff;
+    gap: 10px;
+}
+/* loader */
 header, section{
     padding: 50px 10px;
 }
@@ -56,6 +68,10 @@ p{
     font-size: 1.2em;
     color: rgba(240, 255, 255, 0.815);
 }
+.fa-check{
+    color: var(--verde);
+}
+
 /* global */
 header{
     background: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg24JY4KyJr7S2gVBSOs4X1aUNMZf4WnvFkEwDMat5HKE6uZathEPRbrzDWhwKqXZNx6tF5WB8QF7wXvq0uMIxZsYvdLjBLFLVyv9NFEI4W069iAWaxULmTEbocwBUpFPXc9oMUtnKjNfEOpcYgecmLolrPJbJ1IryIVfyt9Nchh7_wxFuFIRrBnvZPNpVk/s1366/comb_header_bg.jpeg');

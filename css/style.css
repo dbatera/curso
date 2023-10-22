@@ -734,11 +734,6 @@ section.social ul{
 }
 /*anim loader*/
 #loader {
-    /* border: 12px solid rgb(255, 72, 0);
-    border-radius: 50%;
-    border-top: 12px solid rgb(0, 132, 255);
-    width: 70px;
-    height: 70px; */
     width: 100%;
     height: 100vh;
     display: flex;
