@@ -8,6 +8,6 @@ document.onreadystatechange = function() {
         document.querySelector(
           "#loader").style.display = "none";
         document.querySelector(
-          "main").style.display = "flex";
+          "main").style.display = "block";
     }
 };
