@@ -30,7 +30,7 @@ html,body{
     --radius: 5px;
 }
 header, section{
-    padding: 50px 10px;
+    padding: 50px 20px;
 }
 .btn{
     background-color: var(--verde);
@@ -42,13 +42,13 @@ header, section{
     /* width: max-content; */
     text-align: center;
 }
-h2, h3{
+h2, h3, h4{
     font-family: var(--numero-titulo);
 }
 h2{
     font-size: 3em;
 }
-h3{
+h3, h4{
     font-size: 2em;
 }
 p{
@@ -327,6 +327,76 @@ small{
     margin-bottom: 50px;   
 }
 /* garantia */
+.prof{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    background-color: var(--preto);
+    color: rgba(236, 236, 236, 0.829);
+}
+.prof h3{
+    color: var(--amarelo);
+}
+.prof-txt{
+    max-width: 600px;
+}
+.prof video{
+    max-height: 90vh;
+    max-width: 90%;
+    border-radius: var(--radius);
+}
+/* professor */
+.perguntas{
+    background-color: #ecddec;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: var(--preto) !important;
+    text-align: center;
+    gap: 30px;
+}
+.perguntas h2{
+    line-height: .7em;
+}
+.vermelho{
+    color: var(--vermelho);
+    text-shadow: 1px 1px 1px black;
+}
+.perguntas-main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    max-width: 600px;
+}
+.perguntas-main p{
+    color: var(--preto) !important;
+}
+/* perguntas */
+.insta-dicas{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 30px;
+}
+.insta-videos{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+/* insta-videos */
+.comprar-final{
+    text-align: center;
+}
+/* comprar-final */
 footer{
     padding: 50px;
     background-color: var(--preto);
