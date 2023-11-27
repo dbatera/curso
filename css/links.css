@@ -76,7 +76,7 @@ main{
     align-items: baseline;
     flex-wrap: wrap;
     color: white;
-    padding: 50px 20px;
+    padding: 50px 0px;
     gap: 20px;
 }
 .combina-card{
