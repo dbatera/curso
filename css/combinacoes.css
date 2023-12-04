@@ -78,7 +78,7 @@ header{
     width: 300px;
 }
 header .txt{
-    max-width: 800px;
+    /* max-width: 2000px; */
 }
 header span{
     color: var(--vermelho);
@@ -88,11 +88,11 @@ header span{
     color: var(--amarelo);
 }
 header h2{
-    font-size: 2em;
+    font-size: 3em;
 }
 header h3, small{
     font-family: var(--descri-titulo);
-    font-size: 1.5em;
+    font-size: 2em;
 }
 header p{
     font-size: 1.2em;
@@ -136,6 +136,9 @@ header p{
     /* background-color: rgba(0, 0, 0, 0.671);
     backdrop-filter: blur(10px); */
 }
+.headline h1{
+    font-size: 4em;
+}
 .headline h2{
     line-height: 1.2em;
 }
@@ -154,7 +157,7 @@ small{
     margin-top: 5px;
 }
 /* header */
-.video-sobre{
+/* .video-sobre{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -171,7 +174,10 @@ small{
 }
 .video-sobre-iframe iframe{
     border-radius: var(--radius);
-    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.664);
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.767);
+} */
+iframe{
+    max-width: 100%;
 }
 /* vídeo sobre */
 .conteudo-do-curso{
@@ -329,12 +335,24 @@ small{
 /* garantia */
 .prof{
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     gap: 30px;
-    background-color: var(--preto);
+    /* background-color: var(--preto); */
+    background: #000;
+    background-size: cover;
+    background-position: top;
     color: rgba(236, 236, 236, 0.829);
+    text-align: left;
+}
+.prof img{
+    max-width: 600px;
+    border-radius: 5px;
+}
+.prof p{
+    margin-top: 15px;
 }
 .prof h3{
     color: var(--amarelo);
@@ -377,22 +395,6 @@ small{
     color: var(--preto) !important;
 }
 /* perguntas */
-.insta-dicas{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    gap: 30px;
-}
-.insta-videos{
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
-}
-/* insta-videos */
 .comprar-final{
     text-align: center;
 }
@@ -420,5 +422,12 @@ footer{
     }
     .pc{
         display: none;
+    }
+    /* PROFE */
+    .prof{
+        flex-direction: column-reverse;
+    }
+    .prof img{
+        width: 100%;
     }
 }
