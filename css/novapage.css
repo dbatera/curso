@@ -69,6 +69,10 @@ header h1, h2{
 header h2{
     margin-bottom: 60px;
 }
+header h3{
+    color: var(--laranja-2);
+    margin-top: 50px;
+}
 .header-btn{
     background-color: var(--laranja-2);
     padding: 20px;
@@ -77,6 +81,16 @@ header h2{
     font-size: 1.5em;
 }
 /* HEADER */
+.limitado{
+    text-align: center;
+    background-color: black;
+}
+.limitado h2{
+    font-family: var(--h1);
+    color: var(--laranja-2);
+    font-size: 3em;
+}
+/* LIMITADO */
 .objecoes{
     display: flex;
     gap: 20px;
@@ -251,6 +265,31 @@ header h2{
     max-width: 300px;
 }
 /* ALUNOS */
+.prof{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    background-color: black;
+    color: aliceblue;
+}
+.prof h3{
+    font-size: 3em;
+}
+.prof h4{
+    font-size: 1.5em;
+    color: var(--laranja-2);
+}
+.prof p{
+    margin: 10px 0;
+}
+.prof img{
+    max-width: 700px;
+}
+.prof-txt{
+    max-width: 400px;
+}
+/* PROFESSOR */
 .acao{
     display: flex;
     flex-direction: column;
@@ -312,4 +351,8 @@ footer{
         padding: 10px;
     }
     /* APRESENTACOES */
+    .prof img{
+        width: 100%;
+    }
+    /* PROFESSOR */
 }
