@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html>
+<html lang='pt-br' xmlns='http://www.w3.org/1999/xhtml' xmlns:b='http://www.google.com/2005/gml/b' xmlns:data='http://www.google.com/2005/gml/data' xmlns:expr='http://www.google.com/2005/gml/expr'>
+<head>
+    <meta charset='UTF-8'/>
+    <meta content='width=device-width, initial-scale=1.0' name='viewport'/>
+    <script crossorigin='anonymous' src='https://kit.fontawesome.com/6eba5092e8.js'/>   
+    <meta content='Aulas de Bateria em Londrina, Paraná com Professor Miguel Barboza. Vem aprender sua música favorita' name='description'/>
+    <meta content='aula, aulas, bateria, Londrina, curso, Miguel Barboza, @aulasdbatera, dicas de batera, dicas de bateria, aulas de bateria em londrina, professor de bateria, professor de bateria em londrina, curso de bateria em londrina, Paraná, aulas de bateria online, curso de bateria online' name='keywords'/>
+ 	<meta content='index, follow' name='robots'/>
+	<meta content='Miguel Barboza' name='author'/>
+    <link href='https://media.tenor.com/_GBCxyMAmjMAAAAi/drum-joypixels.gif' rel='icon'/>
+    <title>Aulas de Bateria em Londrina</title>
+    <b:skin><![CDATA[
+    @import url('https://fonts.googleapis.com/css2?family=Teko:wght@300;400;500;600;700&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap');
+/* reseat */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    border: none;
+}
+html, body{
+    width: 100%;
+    height: 100vh;
+    font-family: sans-serif;
+    color: var(--branco);
+    background-color: var(--cinza-escuro-5);
+}
+/* global */
+:root{
+    --branco: #eae9e9;
+    --cinza-claro: #8e8e8e;
+    --cinza-escuro: #515151;
+    --cinza-escuro-2: #242424;
+    --cinza-escuro-3: #212121;
+    --cinza-escuro-4: #292929;
+    --cinza-escuro-5: #242627;
+    --laranja: #f35533;
+    --laranja-2: #ff2f00;
+    --vermelho: #F23827;
+    --amarelo: #f39133;
+    --azul-claro: #90a2d6;
+    --azul-claro-trans: #80a0ff5b;
+    --verde: #92ce02;
+    --font-titulo: 'Teko', sans-serif;
+    --font-p: 'Rajdhani', sans-serif;
+    --radius: 5px;
+    --transition-3: 0.3s;
+}
+section.sobre, .vagas, .nivel, .local, .conteudo, .bonus, .alunos, .professor{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    min-height: 100vh;
+    gap: 12px; 
+
+}
+article.global h2, p{
+    padding: 10px;
+}
+h1, h2, h3, h4{
+    font-size: 2em;
+    font-family: var(--font-titulo);
+    text-transform: uppercase;
+    font-weight: 700;
+}
+.titulo-bloco{
+    font-size: 2.5em;
+}
+p, li{
+    font-family: var(--font-p);
+    font-size: 1.5em;
+    font-weight: 500;
+}
+/* header */
+header.cabecalho{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 5px;
+    background: url('https://dbatera.github.io/curso/image/header_bg_girl.jpg');
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    text-align: center;
+    text-shadow: -1px 2px 1px rgba(0, 0, 0, 0.767);
+    gap: 20px;
+}
+header.cabecalho h2{
+    font-weight: 400;
+}
+header.cabecalho .promo h2{
+    font-size: 3em;
+}
+.promocao{
+    font-weight: 700;
+}
+.ultimas{
+    font-weight: 700;
+}
+.txt-off{
+    font-size: 3em;
+    border-radius: var(--radius);
+    text-shadow: -2px 2px 1px var(--vermelho), 2px 2px 1px var(--azul-claro);
+    transition: var(--transition-3);
+    font-weight: 700;
+}
+.txt-off:hover{
+    text-shadow: 4px 2px 1px var(--azul-claro), -4px 2px 1px var(--vermelho);
+}
+.promo-40{
+    color: var(--verde);
+    font-weight: 700;
+}
+.txt-vermelho{
+    color: var(--laranja);
+    font-weight: 700;
+}
+header.cabecalho .btn{
+    color: var(--branco);
+    background-color: var(--vermelho);
+    padding: 15px;
+    margin: 0px;
+    border-radius: var(--radius);
+    transition: 0.3s;
+    text-shadow: none;
+    font-weight: 700;
+    box-shadow: 1px -1px 5px var(--azul-claro), -1px 1px 5px var(--azul-claro);
+    animation-name: shadow-neon;
+    animation-iteration-count: infinite;
+    animation-duration: 5s;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+header.cabecalho .btn:hover{
+    padding: 20px;
+    box-shadow: none;
+}   
+/* social */
+section.social{
+    background-color: rgb(0, 0, 0);
+    top: 40%;
+    right: 0;
+    position: fixed;
+    min-height: auto;
+    padding: 0px;
+    z-index: 3;
+}
+section.social a{
+    color: #eee;
+    font-size: 1em;
+}
+section.social li{
+    margin: 10px;
+}     
+/* mobile */
+@media (max-width: 700px) {
+    /* header */
+    header.cabecalho{
+        height: 100vh;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        padding: 0 0 100px 0;
+        gap: 0;
+    }
+    .txt-off{
+        font-size: 3em;
+    }
+    article.global{
+        width: 100%;
+    }
+    /* social */
+section.social{
+    background-color: rgb(0, 0, 0);
+    bottom: 0;
+    top: 93%;
+    width: 100%;
+    position: fixed;
+}    
+section.social ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-weight: 100;
+}
+}
+
+.titulo{
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	font-size: 3em;
+}
+    ]]></b:skin>
+</head>
+<body>
+    <header class='cabecalho'>
+      <h1 class='titulo'><strong>Aulas</strong> de <strong>Bateria</strong> em <strong>Londrina</strong></h1>
+        <!-- 
+		<article class='promo'>
+            <h2>Super <span class='promocao'>Promoção</span></h2>
+            <h2>de <span class='txt-vermelho'>R$90,00</span></h2>
+            <h2>por <span class='promo-40'>R$45,00</span></h2>
+            <h2><span class='ultimas'>Últimas vagas</span></h2>
+        </article> -->
+        <article class='off'>
+           <!-- <h2><span class='txt-off'>50% off</span></h2> -->
+            <a class='btn' href='https://dbatera.github.io/curso/#sobre'>Saber mais</a>
+        </article> 
+    </header> <!-- header -->
+    <section class='social'>
+        <ul>
+            <li><a href='https://www.instagram.com/aulasdbatera/' target='_blank'><i class='fa-brands fa-instagram'/></a></li>
+            <li><a href='https://www.facebook.com/aulasdbaterialondrina' target='_blank'><i class='fa-brands fa-facebook'/></a></li>
+            <li><a href='https://www.tiktok.com/@aulasdbatera' target='_blank'><i class='fa-brands fa-tiktok'/></a></li>
+            <li><a href='https://www.youtube.com/channel/UC3eBHfjiyoAuOIyfXN8KfrA/videos' target='_blank'><i class='fa-brands fa-youtube'/></a></li>
+            <li><a href='https://contate.me/aulasdbatera' target='_blank'><i class='fa-brands fa-whatsapp'/></a></li>
+        </ul> 
+    </section><!--social-->
+    <b:section class='themewidgetsec' id='themewidgetsec' preferred='yes'/>
+</body>
+</html>

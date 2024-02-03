@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap');
+*{
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+/* HESEAT */
+:root{
+    --h1: 'Bebas Neue', sans-serif;
+    --p: 'Comfortaa', sans-serif;
+}
+body{
+    font-family: sans-serif;
+}
+section{
+    padding: 100px 50px;
+}
+h1, h2, h3, h4{
+    font-family: var(--h1);
+}
+p{
+    font-family: var(--p);
+    font-size: 1em;
+}
+h1{
+    font-size: 3em;
+}
+h2, h3, h4{
+    font-size: 2em;
+}
+/* GLOBAL */
+body{
+    background-color: #fbfed7;
+    background: url('../imagens/unidade_bg.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+}
+header{
+    padding: 30px;
+    color: #fbfed7;
+    text-align: center;
+}
+main{
+    /* min-height: 90vh; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.botao{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+.btn{
+    background-color: #710000;
+    color: #fbfed7;
+    padding: 30px;
+    width: 200px;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 5px 5px 1px #270000;
+    transition: .2s;
+}
+.btn:hover{
+    box-shadow: 1px 1px 1px black;
+    transform: scale(.9);
+}
