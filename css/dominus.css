@@ -149,6 +149,16 @@ h2, h3, h4{
     background-position: center;
     background-size: cover;
 }
+.musicalizacao{
+    background: url('../imagens/musicalizacao.jpg');
+    background-position: center;
+    background-size: cover;
+}
+.vestibular{
+    background: url('../imagens/vestibular.jpg');
+    background-position: center;
+    background-size: cover;
+}
 .instrumentos img{
     width: 300px;
 }

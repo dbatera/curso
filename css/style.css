@@ -72,9 +72,9 @@ header.cabecalho{
     align-items: center;
     justify-content: center;
     padding: 50px 5px;
-    background: url('../image/header_bg_girl.jpg');
+    background: url('https://images.unsplash.com/photo-1423110041833-0d5dfcc552e1?q=80&w=1476&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
     background-size: cover;
-    background-position: center;
+    background-position: bottom;
     min-height: 100vh;
     text-align: center;
     text-shadow: -1px 2px 1px rgba(0, 0, 0, 0.767);
@@ -144,6 +144,10 @@ section.sobre{
     background-size: contain;
     background-position: top left;
     background-repeat: no-repeat;
+}
+.image-sobre img{
+    max-width: 400px;
+    border-radius: 1000px;
 }
 iframe{
     width: 100%;
@@ -630,6 +634,9 @@ section.social li{
         width: 100%;
     }
 /* sobre */
+.image-sobre img{
+    width: 100%;
+}
 iframe{
     width: 100%;
 }
