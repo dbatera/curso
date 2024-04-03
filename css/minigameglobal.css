@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Play:wght@400;700&family=Press+Start+2P&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html, body{
+    width: 100%;
+    height: 100%;
+}
+/* reset */
+:root{
+    --titulo: "Press Start 2P", system-ui;
+    --titulo-2: "Play", sans-serif;
+}
+body{
+    background: url("https://t3.ftcdn.net/jpg/03/38/05/44/360_F_338054496_WGrjDx4HVdAYs3mkkJFrc7wBxPx1qe7D.jpg");
+    background-size: cover;
+    background-position: center;
+    color: aliceblue;
+    text-shadow: 1px 1px 1px black;
+}
+h1{
+    font-family: var(--titulo);
+}
+h2, h3, a{
+    font-family: var(--titulo-2);
+}
+.btn{
+    text-decoration: none;
+    color: aliceblue;
+    background-color: blueviolet;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 50px;
+    font-size: 1.5em;
+    box-shadow: 5px 5px 1px black;
+}
+header{
+    text-align: center;
+    padding: 20px;
+    background-color: blueviolet;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 90vh;
+}
+main h2{
+    background-color: rgb(92, 0, 35);
+    padding: 10px;
+    border-radius: 5px;
+}
+/* global */

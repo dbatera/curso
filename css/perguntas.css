@@ -1,0 +1,14 @@
+
+/* global */
+.alternativas{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    padding: 10px;
+    text-align: center;
+}
+.alternativas a{
+    background-color: rgb(255, 0, 140);
+    margin-top: 0;
+}
+/* alternativas */
