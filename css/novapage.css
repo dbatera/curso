@@ -340,6 +340,9 @@ footer{
     border-top: 3px solid var(--laranja-2);
     padding-top: 10px;
 }
+footer a{
+    color: var(--laranja);
+}
 /* FOOTER */
 /* MOBILE */
 @media (max-width: 700px){
