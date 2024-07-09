@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* reseat */
+:root{
+    --bebas:"Bebas Neue", sans-serif;
+    --play: "Play", sans-serif;
+    --amarelo: #ff9d39;
+    --vermelho: #c44d4d;
+}
+/* root */
+h1, h2, h3, button{
+  font-family: var(--bebas);
+}
+h2{
+  margin-bottom: 10px;
+}
+p{
+  font-family: var(--play);
+  max-width: 600px;
+  margin-bottom: 10px;
+}
+li{
+  font-family: var(--play);
+}
+button{
+  padding: 10px;
+  background-color: var(--amarelo);
+  border: none;
+  cursor: pointer;
+  font-size: 1.5em;
+  color: black;
+}
+.btn-fechar{
+  position: fixed;
+  border: none;
+  top: 0px;
+  left: 0px;
+  font-size: 2em;
+  padding: 10px 10px 10px 20%;
+}
+@keyframes slideUp {
+    from {
+      transform: translatey(100%); ;
+    }
+    to {
+      transform: translatey(0); ;
+    }
+  }
+  
+  /* Definindo a animação de slide de cima para baixo */
+  @keyframes slideDown {
+    from {
+      transform: translatey(0);
+    }
+    to {
+      transform: translatey(100%); 
+    }
+  }
+/* global */
+.cabecalho{
+    min-height: 100vh;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+.cabecalho h1, h2{
+    font-family: var(--bebas);
+    color: var(--amarelo);
+}
+.cabecalho button{
+  padding: 5px 10px;
+  border: none;
+  font-family: var(--bebas);
+  font-size: 2em;
+  margin-top: 10px;
+  background-color: var(--amarelo);
+  cursor: pointer;
+}
+/* header */
+#menu{
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    position: absolute;
+    top: 0;
+    background-color: black;
+    border-top: 5px solid var(--amarelo);
+    height: 100vh;
+    width: 100%;
+}
+.buttom-menu{
+    min-width: 150px;
+}
+.btn-agendar{
+  background-color: var(--vermelho);
+}
+/* menu */
+#info-sec, #alunos-sec, #prof-sec, #valores-sec{
+  border-top: 5px solid var(--amarelo);
+    color: white;
+    padding: 70px 20px;
+    display: none;
+    position: absolute;
+    top: 0;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    min-height: 100vh;
+    width: 100%;
+}
+.container{
+  margin: 50px 0;
+  border-bottom: 3px solid var(--amarelo);
+  padding-bottom: 10px;
+}
+.container li{
+  list-style: none;
+}
+.iframe-container{
+  width: 100%;
+  height: 50vh;
+}
+ iframe{
+  margin-bottom: 10px;
+}
+/* info sec */
+.aula-gratis{
+  border-bottom: none;
+  border: solid 3px var(--amarelo);
+  padding: 20px;
+}
+.aula-gratis h3{
+  margin-bottom: 20px;
+}
+/* valores */
