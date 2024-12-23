@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+/* reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* global */
+:root{
+    --orange: #DC5F00;
+    --grey1: #373A40;
+    --grey2: #686D76;
+    --grey3: #eeeeee;
+}
+body{
+    font-family: "Roboto", serif;
+}
+.btn-chamada{
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 1.5em;
+    background: var(--orange);
+}
+/* header */
+header{
+    background: url('https://images.unsplash.com/photo-1524230659092-07f99a75c013?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80');
+    background-attachment: fixed;
+    color: white;
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+}
+.header-txt{
+    padding: 50px 50px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+    background-color: rgba(0, 0, 0, 0.774);
+    color: white;
+}
+header h1{
+    font-size: 3em;
+}
+header h1, h2{
+    max-width: 600px;
+}
+header h2{
+    margin-bottom: 30px;
+}
+/* informações */
+.info-divisoria{
+    background-color: var(--orange);
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--grey3);
+}
+.info-divisoria img{
+    max-width: 50px;
+}
+.info{
+    min-height: 100vh;
+    display: flex;
+    gap: 30px;
+    background: url('https://c0.wallpaperflare.com/path/29/13/133/man-playing-with-drums-3421bd5ba5fa44fdad5b082c41953884.jpg');
+    background-size: cover;
+    background-position: top;
+    background-attachment: fixed;
+    padding: 50px 20px;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.info-container{
+    max-width: 400px;
+    background-color: var(--grey3);
+    padding: 20px;
+    border-radius: 5px;
+    min-height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 100px;
+}
+.info-container img{
+    max-width: 100px;
+    margin-top: -100px;
+    background-color: var(--grey3);
+    border-radius: 5px;
+    padding: 5px;
+    border: 3px solid var(--grey3);
+}
+.info-container h3{
+    margin-top: 10px;
+}
+/* estruturas */
+.estrutura{
+    display: flex;
+    flex-wrap: wrap;
+}
+.estrutura-txt{
+    padding: 20px;
+    position: absolute;
+    max-width: 400px;
+    background-color: var(--grey3);
+    margin-top: 20px;
+    margin-left: 20px;
+    border-radius: 5px;
+}
+.estrutura img{
+    max-width: 50%;
+    margin: 0;
+}
+/* professor */
+.prof{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--grey);
+}
+.prof-txt{
+    max-width: 400px;
+    padding: 20px;
+    background-color: var(--grey3);
+    border-radius: 5px;
+    position: absolute;
+    right: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.prof-txt h4{
+    margin-bottom: 10px;
+}
+.prof img{
+    max-width: 100%;
+    border-radius: 5px;
+}
+.mais-info{
+    text-align: center;
+    padding: 50px 20px;
+    background: var(--grey1);
+}
+/* local */
+.local{
+    text-align: center;
+    padding: 0px 20px 50px 20px;
+    background-color: var(--grey1);
+}
+.local p{
+    background-color: var(--grey3);
+    padding: 20px 10px;
+    border-radius: 5px 5px 0 0;
+    max-width: 500px;
+}
+.local iframe{
+    border-radius: 0 5px 5px;
+}
+footer{
+    color: var(--grey2);
+    background-color: black;
+    padding: 10px;
+    text-align: center;
+}
+/* mobile */
+@media screen and (max-width:900px){
+    .estrutura-txt{
+        position: relative;
+        margin: 0;
+        max-width: 100%;
+    }
+    .estrutura img{
+        max-width: 100%;
+    }
+    .prof{
+        gap: 0;
+    }
+    .prof-txt{
+        position: relative;
+        max-width: 100%;
+        right: auto;
+    }
+    .local iframe{
+        border-radius: 0 0 5px 5px;
+    }
+}

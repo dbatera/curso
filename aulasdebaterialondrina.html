@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/aulasdebaterialondrina2.css">
+    <meta content='Aulas de bateria individuais, personalizadas e  com baterias acústicas.' name='description'/>
+    <meta content='aulas, bateria, curso, aulas de bateria, curso de bateria, Londrina, aulas de bateria em Londrina, curso de bateria em Londrina, aulas de bateria Londrina, curso de bateria Londrina' name='keywords'/>
+    <title>Aulas de Bateria Londrina</title>
+    <b:skin><![CDATA[
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+    /* reset */
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    /* global */
+    :root{
+        --orange: #DC5F00;
+        --grey1: #373A40;
+        --grey2: #686D76;
+        --grey3: #eeeeee;
+    }
+    body{
+        font-family: "Roboto", serif;
+    }
+    .btn-chamada{
+        text-decoration: none;
+        color: white;
+        padding: 10px;
+        border-radius: 5px;
+        font-size: 1.5em;
+        background: var(--orange);
+    }
+    /* header */
+    header{
+        background: url('https://images.unsplash.com/photo-1524230659092-07f99a75c013?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80');
+        background-attachment: fixed;
+        color: white;
+        background-size: cover;
+        background-position: center;
+        min-height: 100vh;
+    }
+    .header-txt{
+        padding: 50px 50px;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        gap: 10px;
+        background-color: rgba(0, 0, 0, 0.774);
+        color: white;
+    }
+    header h1{
+        font-size: 3em;
+    }
+    header h1, h2{
+        max-width: 600px;
+    }
+    header h2{
+        margin-bottom: 30px;
+    }
+    /* informações */
+    .info-divisoria{
+        background-color: var(--orange);
+        padding: 20px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: var(--grey3);
+    }
+    .info-divisoria img{
+        max-width: 50px;
+    }
+    .info{
+        min-height: 100vh;
+        display: flex;
+        gap: 30px;
+        background: url('https://c0.wallpaperflare.com/path/29/13/133/man-playing-with-drums-3421bd5ba5fa44fdad5b082c41953884.jpg');
+        background-size: cover;
+        background-position: top;
+        background-attachment: fixed;
+        padding: 50px 20px;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .info-container{
+        max-width: 400px;
+        background-color: var(--grey3);
+        padding: 20px;
+        border-radius: 5px;
+        min-height: 200px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 100px;
+    }
+    .info-container img{
+        max-width: 100px;
+        margin-top: -100px;
+        background-color: var(--grey3);
+        border-radius: 5px;
+        padding: 5px;
+        border: 3px solid var(--grey3);
+    }
+    .info-container h3{
+        margin-top: 10px;
+    }
+    /* estruturas */
+    .estrutura{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .estrutura-txt{
+        padding: 20px;
+        position: absolute;
+        max-width: 400px;
+        background-color: var(--grey3);
+        margin-top: 20px;
+        margin-left: 20px;
+        border-radius: 5px;
+    }
+    .estrutura img{
+        max-width: 50%;
+        margin: 0;
+    }
+    /* professor */
+    .prof{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+        align-items: center;
+        justify-content: center;
+        background-color: var(--grey);
+    }
+    .prof-txt{
+        max-width: 400px;
+        padding: 20px;
+        background-color: var(--grey3);
+        border-radius: 5px;
+        position: absolute;
+        right: 100px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .prof-txt h4{
+        margin-bottom: 10px;
+    }
+    .prof img{
+        max-width: 100%;
+        border-radius: 5px;
+    }
+    .mais-info{
+        text-align: center;
+        padding: 50px 20px;
+        background: var(--grey1);
+    }
+    /* local */
+    .local{
+        text-align: center;
+        padding: 0px 20px 50px 20px;
+        background-color: var(--grey1);
+    }
+    .local p{
+        background-color: var(--grey3);
+        padding: 20px 10px;
+        border-radius: 5px 5px 0 0;
+        max-width: 500px;
+    }
+    .local iframe{
+        border-radius: 0 5px 5px;
+    }
+    footer{
+        color: var(--grey2);
+        background-color: black;
+        padding: 10px;
+        text-align: center;
+    }
+    /* mobile */
+    @media screen and (max-width:900px){
+        .estrutura-txt{
+            position: relative;
+            margin: 0;
+            max-width: 100%;
+        }
+        .estrutura img{
+            max-width: 100%;
+        }
+        .prof{
+            gap: 0;
+        }
+        .prof-txt{
+            position: relative;
+            max-width: 100%;
+            right: auto;
+        }
+        .local iframe{
+            border-radius: 0 0 5px 5px;
+        }
+    }
+    ]]></b:skin>
+</head>
+<body>
+    <header>
+        <div class="header-txt">
+            <h1>Aulas de Bateria Londrina</h1>
+            <h2>Transforme sua paixão pela música em habilidade com aulas no seu ritmo.</h2>
+            <a href="#" class="btn-chamada">Agendar Aula</a>
+        </div>
+    </header>
+    <main>
+        <div class="info-divisoria">
+            <h2>Quer saber mais?</h2>
+            <img src="image/arrow_down.png" alt="">
+        </div> 
+        <section class="info">
+            <article class="info-container">
+                <img src="image/music-software-svgrepo-com.svg" alt="">
+                <h3>Horário pra suas aulas de Bateria</h3>
+                <p>Atendemos de segunda à sexta das 9 as 21 horas e aos sábados das 9 às 14 horas.</p>
+            </article>
+            <article class="info-container">
+                <img src="image/music-software-svgrepo-com white.svg" alt="">
+                <h3>Duração das suas aulas de Bateria</h3>
+                <p>Temos <strong>aulas</strong> mais curtas de 30 minutos, ótimas para quem prefere uma <strong>aula</strong> mais focada e <strong>aulas</strong> de 50 minutos.</p>
+            </article>
+        </section>
+        <div class="info-divisoria">
+            <h2>Estrutura</h2>
+            <img src="image/arrow_down.png" alt="">
+        </div>
+        <section class="estrutura">
+            <div class="estrutura-txt">
+                <p>Nossas salas são climatizadas e possuem <strong>Baterias acústicas</strong>, sistema de som e gravação, tratamento e isolamento acústico.</p>
+            </div>
+            <img src="image/estrutura.jpg" alt="sala para aula de bateria com professor e aluna sentados na bateria">
+            <img src="image/estrutura1.jpg" alt="sala para aula de bateria com professor e aluna sentados na bateria">
+        </section>
+        <div class="info-divisoria">
+            <h2>Professor</h2>
+            <img src="image/arrow_down.png" alt="">
+        </div>
+        <section class="prof">
+            <div class="prof-txt">
+                <h4>Miguel Barboza</h4>
+                <p>Já são mais de vinte anos tocando <strong>bateria</strong> e dezessete anos em <strong>sala</strong> de <strong>aula</strong>. me especializei em <strong>educação musical</strong>. Recentemente inaugurei meu próprio instituto de <strong>Bateria</strong>: @aulasdbatera.</p>
+            </div>
+            <img src="image/prof com aluno.jpg" alt="Professor de bateria em Londrina">
+        </section>
+        <div class="mais-info">
+            <a href="#" class="btn-chamada">Mais Informações</a>
+        </div>
+        <section class="local">
+            <p>Av. Juscelino Kubitscheck, 3096 - Centro, Londrina - PR</p>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3663.880444081546!2d-51.161053424677135!3d-23.32009617896633!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94eb4377f3c34333%3A0x70e439d3300b2dc7!2sJK%20Music%20Studio!5e0!3m2!1spt-BR!2sbr!4v1734962043174!5m2!1spt-BR!2sbr" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+    </main>
+    <footer>
+        <small>Copy - MB - 2025</small>
+    </footer>
+    <b:section class='themewidgetsec' id='themewidgetsec' preferred='yes'/>  
+</body>
+</html>
