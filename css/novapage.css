@@ -59,7 +59,7 @@ header{
     background: url('https://dbatera.github.io/curso/image/header_bg_girl.jpg');
     background-size: cover;
     background-position: center;
-    background-attachment: fixed;
+    background-attachment: scroll;
     color: aliceblue;
     text-align: center;
 }
